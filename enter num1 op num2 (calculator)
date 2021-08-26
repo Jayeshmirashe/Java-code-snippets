@@ -1,0 +1,26 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.print("enter num1 operator num2");
+        Scanner input= new Scanner(System.in);
+        double num1=input.nextInt();
+        char op= input.next().charAt(0);
+        double num2=input.nextInt();
+        
+        if(op=='+')
+            System.out.println(num1+num2);
+        
+        else if(op=='-')
+            System.out.println(num1-num2);
+
+        else if(op=='*')
+            System.out.println(num1*num2);
+        
+        else
+            System.out.println(num1 / num2);
+    }
+}
