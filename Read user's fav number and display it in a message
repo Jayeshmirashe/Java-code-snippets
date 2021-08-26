@@ -1,0 +1,17 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.print("Enter your favourite number ");
+        Scanner input= new Scanner(System.in);
+        int number= input.nextInt();
+        System.out.println(number + " "+"is my favourite number too"); //+ used as concating operator with strings
+        System.out.println(number+" ".concat("is my favourite mumber tooo")); //using .concat() String method
+
+
+    }
+
+}
