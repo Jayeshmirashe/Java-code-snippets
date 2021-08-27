@@ -1,0 +1,24 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.print("enter a number");
+        Scanner input=new Scanner(System.in);
+        int number=input.nextInt();
+        int i=1;int sum=0;
+        for(;i<number/2;i++){// range of strict divisors of given number(<number/2)
+
+            if(number%i==0)// this confirm the strict divisor in the range(number%i==0)i.e remainder is 0
+                sum=sum+i;
+        }
+        if(sum==1) // if sum=1 then there will be no strict divisor in the range excluding 1
+            System.out.println(number+" is prime");
+        else
+            System.out.println(number+" is not prime");
+
+
+    }
+}
