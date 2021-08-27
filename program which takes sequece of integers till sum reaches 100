@@ -1,0 +1,19 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        int number = 0;
+        for(; ;) {
+            System.out.println("enter numbers to get sum 100");
+            Scanner input = new Scanner(System.in);
+            number = input.nextInt();
+            number = number + number;
+            if(number>100)
+            break;
+        }
+        System.out.println("Done");
+    }
+}
