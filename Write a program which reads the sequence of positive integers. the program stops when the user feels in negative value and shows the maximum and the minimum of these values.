@@ -1,0 +1,29 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        int number=0;
+        int min=number;
+        int max=number;
+        for(; ;){
+            System.out.println("enter a number");
+            Scanner input=new Scanner(System.in);
+             number=input.nextInt();
+
+            if(number<0)
+                break;
+
+            if(number<min)
+                min=number;
+            if(number>max)
+                max=number;
+        }
+        System.out.println(min);
+        System.out.println(max);
+
+    }
+}
