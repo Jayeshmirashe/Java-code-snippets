@@ -1,0 +1,32 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println("enter a number");
+        Scanner input=new Scanner(System.in);
+       int number=input.nextInt();
+        int min=number;
+        int max=number;
+        if(number>0){
+            while(true){
+
+
+                number=input.nextInt();
+
+                if(number<0)
+                    break;
+
+                if(number<min)
+                    min=number;
+                if(number>max)
+                    max=number;
+            }
+        }
+        System.out.println("min value "+min+" "+"max value"+max);
+
+    }
+}
+
