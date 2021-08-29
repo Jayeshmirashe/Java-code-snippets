@@ -1,0 +1,16 @@
+package com.company;
+
+public class Main {
+    public static void main(String[] args){
+      String str="abcd";
+      boolean isPalidrome=true;
+      for(int i=0, j=str.length()-1;i<j;i++,j--){
+          if(str.charAt(i)==str.charAt(j))
+              continue; // after condition(i<j) is false we come out of loop without below executing below statment
+
+          isPalidrome=false;
+          break;
+      }
+      System.out.println(isPalidrome==true?"palindrome":"not palindrome");
+        }
+    }
