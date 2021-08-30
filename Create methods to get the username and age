@@ -1,0 +1,22 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.print("Enter your name and age ");
+
+        System.out.println(getName()+" "+getAge());
+
+    }
+
+    public static String getName() {
+        return new Scanner(System.in).next();
+    }
+
+    public static int getAge() {
+       return new Scanner(System.in).nextInt();
+    }
+}
+
+
