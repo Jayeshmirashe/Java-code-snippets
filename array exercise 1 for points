@@ -1,0 +1,44 @@
+package com.company;
+
+import java.awt.*;
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.print("enter points atleast 1 and atmost 20");
+
+        Scanner input=new Scanner(System.in);
+        int n=input.nextInt();
+        while(n<1 || n>20){
+            System.out.print("pls enter the point in valid range");
+        }
+        Point[] point= new Point[20];;
+        if(n>=1 && n<=20){
+            System.out.print("enter the ordinate you want to enter");
+            int x=input.nextInt();
+            int y=input.nextInt();
+            for(int i=0;i< point.length;i++){
+                Arrays.fill(point,0,n,new Point(x,y));
+            }
+        }
+        printArray(point);
+    }
+    public static void printArray(Point[] array){
+        for(int i=0;i<array.length;i++){
+            System.out.print(array[i]+" ");
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
